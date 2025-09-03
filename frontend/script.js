@@ -1,9 +1,25 @@
 const API_URL = "https://quiz-mci6.onrender.com/explain";
 
 const questions = [
-  { sn:1, qn:'KE in SHM is maximum when displacement is __', op1:'Amplitude', op2:'Amplitude/4', op3:'Amplitude/2', op4:'Zero', ans:'op4' },
-  { sn:2, qn:'Height of water in a capillary tube at 4 C is', op1:'Maximum', op2:'Minimum', op3:'Cannot be said', op4:'Zero', ans:'op2' }
-];
+    {sn:1, qn:'KE in SHM is maximum when its displacement is', op1:'Amplitude', op2:'Amplitude/4', op3:'Amplitude/2', op4:'Zero', ans:'op4'},
+    {sn:2, qn:'Height of water in a capillary tube at 4 C is', op1:'Maximum', op2:'Minimum', op3:'Cannot be said', op4:'Zero', ans:'op2'},
+    {sn:3, qn:'When Temperature of ideal gas is doubled its rms speed increases by', op1:'sqrt(2)', op2:'2', op3:'1/sqrt(2)', op4:'1/2', ans:'op1'},
+    {sn:4, qn:'When light passes through glass slab ', op1:'Wavelength Decreases', op2:'Wavelength Increases', op3:'Frequency Decreases', op4:'Frequency increases', ans:'op1'},
+    {sn:5, qn:'When a charge moves in a direction perpendicular to magnetic field then', op1:'KE is constant and momentum changes', op2:'Momentum is constant and KE changes', op3:'Both KE and momentum changes', op4:'Both velocity and momentum are constant', ans:'op1'},
+    {sn:6, qn:'Mass of positron is same as mass of ____', op1:'Proton', op2:'Electron', op3:'Neutron', op4:'Nutrino', ans:'op2'},
+    {sn:7, qn:'Water is used as coolant because of', op1:'Low specific heat capacity', op2:'High specific heat capacity', op3:'Universal solvent', op4:'Anamolous expansion', ans:'op2'},
+    {sn:8, qn:'Unit of coefficient of thermal conductivity is', op1:'Watt K/m', op2:'Watt Km', op3:'Watt/Km', op4:'Joule/s', ans:'op3'},
+    {sn:9, qn:'Soft iron is used as core of transformer because of', op1:'High Hysteresis and High Permeability', op2:'High Hysteresis and Low permeability', op3:'Low Hysteresis and High Permeability', op4:'Low Hysteresis and Low permeability', ans:'op4'},
+    {sn:10, qn:'Power Dissipition in AC circuit depends upon', op1:'Inductance', op2:'Resistance', op3:'Capacitance', op4:'Impedence', ans:'op2'},
+    {sn:11, qn:'When frequency of incident light is increased ', op1:'Photo Current Increases', op2:'KE of electron increases', op3:'Stopping potential increases', op4:'Photo current decreases', ans:'op2'},
+    {sn:12, qn:'The dimension of Impulse is ', op1:'[MLT^-2]', op2:'[MLT^-1]', op3:'[ML^2T-2]', op4:'[M^2LT^-1]', ans:'op2'},
+    
+
+
+
+
+
+  ];
 
 let currentQuestion = 0;
 let answered = {};
