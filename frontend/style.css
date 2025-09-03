@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 30%;
+  background: #fff8dc;
+  padding: 20px;
+  border-right: 2px solid #ddd;
+  font-size: 14px;
+  overflow-y: auto;
+}
+
+.quiz-container {
+  flex: 1;
+  padding: 20px;
+}
+
+#options button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  background: #fafafa;
+  cursor: pointer;
+}
+
+#options button.correct {
+  background: #c8e6c9;
+  border-color: #4caf50;
+  font-weight: bold;
+}
+
+#options button.wrong {
+  background: #ffcdd2;
+  border-color: #f44336;
+  font-weight: bold;
+}
