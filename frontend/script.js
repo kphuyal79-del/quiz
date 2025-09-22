@@ -73,7 +73,7 @@ function showAnswer(q, clickedBtn) {
 }
 
 async function getExplanation(q) {
-  explanationBox.textContent = "⏳ Generating explanation...";
+  explanationBox.textContent = " Generating explanation...";
   try {
     const response = await fetch(API_URL, {
       method: "POST",
@@ -81,9 +81,9 @@ async function getExplanation(q) {
       body: JSON.stringify({ question: q.qn, correctAnswer: q[q.ans] })
     });
     const data = await response.json();
-    explanationBox.textContent = "💡 " + data.explanation;
+    explanationBox.textContent = data.explanation;
   } catch (err) {
-    explanationBox.textContent = "⚠️ Failed to load explanation.";
+    explanationBox.textContent = "Failed to load explanation.";
   }
 }
 
